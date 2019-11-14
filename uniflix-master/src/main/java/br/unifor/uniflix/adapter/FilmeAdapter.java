@@ -7,12 +7,12 @@ import br.unifor.uniflix.model.Filme;
 public class FilmeAdapter implements FilmeJSON{
 	
 	@Override
-	public Filme getFilme(JSONObject movieJson) {
+	public Filme getFilme(JSONObject jsonObject) {
 		Filme filme = new Filme();
-		filme.setTitulo(movieJson.getString("title"));
-        filme.setSinopse(movieJson.getString("overview"));
-        filme.setAdulto(movieJson.getBoolean("adult"));
-        filme.setNota(movieJson.getDouble("vote_average"));
+		filme.setTitulo(jsonObject.getString("title"));
+        filme.setSinopse(jsonObject.getString("overview"));
+        filme.setAdulto(jsonObject.getBoolean("adult"));
+        filme.setNota(jsonObject.getDouble("vote_average"));
 		return filme;
 	}
 

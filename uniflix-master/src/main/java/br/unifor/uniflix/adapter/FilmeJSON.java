@@ -6,6 +6,6 @@ import br.unifor.uniflix.model.Filme;
 
 public interface FilmeJSON {
 	
-	Filme getFilme(JSONObject movieJson);
+	Filme getFilme(JSONObject jsonObject);
 	
 }
